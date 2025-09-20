@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class FeedbackService {
-   private apiUrl = 'https://dw5qtg4ln1.execute-api.us-east-1.amazonaws.com/Dev/Feedback';
+   private apiUrl = 'https://vmnm06v5fa.execute-api.us-east-1.amazonaws.com/api';
 
   constructor(private http: HttpClient) {}
 
