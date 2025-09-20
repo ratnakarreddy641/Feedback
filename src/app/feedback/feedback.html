@@ -1,0 +1,13 @@
+<div class="feedback-container">
+  <h2>Give Your Feedback</h2>
+  <div class="form-group">
+    <input type="text" placeholder="Enter your name" [(ngModel)]="name">
+  </div>
+  <div class="form-group">
+    <select [(ngModel)]="feedback">
+      <option value="" disabled selected>Select feedback</option>
+      <option *ngFor="let option of feedbackOptions" [value]="option">{{option}}</option>
+    </select>
+  </div>
+  <button (click)="submitFeedback()">Submit Feedback</button>
+</div>

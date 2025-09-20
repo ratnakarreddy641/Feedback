@@ -1,0 +1,11 @@
+<div style="display: flex; justify-content: end;">
+  <button routerLink="/admin" class="admin-btn">Admin</button>
+</div>
+
+<div class="home-container">
+  <h1>Welcome to Feedback App</h1>
+  <p>Scan the QR code below to give your feedback</p>
+  <div *ngIf="qrData">
+    <qrcode [qrdata]="qrData" [width]="250" [errorCorrectionLevel]="'M'"></qrcode>
+  </div>
+</div>

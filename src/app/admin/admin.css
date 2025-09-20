@@ -1,0 +1,37 @@
+.admin-container {
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+
+  input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    padding: 10px 20px;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    &:hover { background: #115293; }
+  }
+
+  table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    th { background: #f0f0f0; }
+  }
+
+  .error { color: red; }
+}
